@@ -1,13 +1,13 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, SafeAreaView } from 'react-native';
 import NewsScreen from './src/NewsScreen';
-
+import styles from './src/Stylepage';
 const App = () => {
   return (
-    <View>
-      <Text style={{marginTop:50}}>Newsapp</Text>
+    <SafeAreaView style = {{backgroundColor: '#BACBD9', paddingTop: 15, flex: 1}}>
+      <Text style={styles.title}>Newsapp</Text>
       <NewsScreen />
-    </View>
+    </SafeAreaView>
   );
 };
 
