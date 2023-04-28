@@ -34,7 +34,7 @@ import styles from "./Stylepage";
   async function getNews(category) {
       try {
         const response = await axios.get(
-          `https://newsapi.org/v2/everything?country=br&category=${category}&apiKey=15c0e73d96054f388005a828b0b892b9`
+          `https://newsapi.org/v2/top-headlines?country=br&category=${category}&apiKey=15c0e73d96054f388005a828b0b892b9`
         );
         setArticles(response.data.articles);
         activeCategory(category);
